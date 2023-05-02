@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.examly.springapp.SpringappApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 8.982 s <<< FAILURE! - in com.examly.springapp.SpringappApplicationTests
+test_case5  Time elapsed: 0.031 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.examly.springapp.SpringappApplicationTests.test_case5(SpringappApplicationTests.java:88)
+
+test_case7  Time elapsed: 0.035 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.examly.springapp.Model.ServiceCenterModel; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.examly.springapp.Model.ServiceCenterModel
+	at com.examly.springapp.SpringappApplicationTests.test_case7(SpringappApplicationTests.java:107)
+Caused by: org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.examly.springapp.Model.ServiceCenterModel; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.examly.springapp.Model.ServiceCenterModel
+	at com.examly.springapp.SpringappApplicationTests.test_case7(SpringappApplicationTests.java:107)
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.examly.springapp.Model.ServiceCenterModel
+	at com.examly.springapp.SpringappApplicationTests.test_case7(SpringappApplicationTests.java:107)
+
+test_case8  Time elapsed: 0.036 s  <<< ERROR!
+java.lang.IllegalArgumentException: 'url' should start with a path or be a complete HTTP URL:  /user/cancelappointment/01
+	at com.examly.springapp.SpringappApplicationTests.test_case8(SpringappApplicationTests.java:119)
+
